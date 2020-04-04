@@ -1,0 +1,8 @@
+<div *ngIf="doneList.length != 0;else noList">
+  <ul class="list-group">
+      <li class="list-group-item strike" *ngFor="let item of doneList">{{item.item}}</li>
+  </ul>
+</div>
+<ng-template #noList>
+  <h2 class="text-center"> No List Added! </h2>
+</ng-template>
